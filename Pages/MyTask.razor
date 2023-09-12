@@ -9,7 +9,7 @@
     }
 </ul>
 <input placeholder="tasks to complete" @bind="newTask" />
-<button>Add task</button>
+<button @onclick="AddTask">Add task</button>
 
 @code {
     private List<MyTaskItem> tasks = new();
